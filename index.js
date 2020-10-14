@@ -1,3 +1,6 @@
+const fs = require("fs");
+const inquirer = require("inquirer");
+const markDown = generateMarkDown();
 // array of questions for user
 const questions = [
 
