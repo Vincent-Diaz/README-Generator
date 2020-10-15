@@ -8,12 +8,28 @@ function generateMarkdown(data) {
   ## Table of Contents
   *[Installation](#installation)
   *[Usage](#usage)
-  *[Contributors](#Contributors)
+  *[Contributors](#contributors)
   *[Test](#test)
   *[Questions](#questions)
   *[License](#license)
-  
 
+  ## Installation:
+  ${data.installation}
+
+  ## Usage:
+  ${data.usage}
+
+  ## Contributors
+  ${data.contributors}
+
+  ## Test:
+  ${data.test}
+
+  ## Questions:
+  If you have any questions, contact ${data.username} on Github.
+
+  ## License:
+  ${data.license}
 `;
 }
 
