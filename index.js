@@ -15,7 +15,7 @@ async function promptUser() {
                 type: "input",
                 message: "What is your Github username?",
                 name: "username",
-                default: "Vincent Diaz"
+                default: "Vincent-Diaz"
             },
             {
                 type: "input",
@@ -50,13 +50,13 @@ async function promptUser() {
             {
                 type: "list",
                 message: "Choose a license for your project.",
-                choices: ["license1", "license2"],
+                choices: ["MIT license", "Apache license 2.0", "Mozilla Public License 2.0"],
                 name: "license"
             },
 
         ]);
         console.log(data)
-        writeFileAsync("README2.md", generate(data));
+        writeFileAsync("ExampleREADME.md", generate(data));
     } catch (err) {
         console.log(err);
     }
