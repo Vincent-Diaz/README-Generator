@@ -1,14 +1,13 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-const axios = require("axios");
 const generate = require("./utils/generateMarkdown.js");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 // array of questions for user
 
-function promptUser() {
-    return inquirer.prompt([
+async function promptUser() {
+     const data = await inquirer.prompt([
 
         {
             type: "input",
@@ -48,23 +47,32 @@ function promptUser() {
         {
             type: "list",
             message: "Choose a license for your project.",
-            choices: [],
+            choices: ["license1", "license2", "license3"],
             name: "license"
         },
+        
     ]);
-    // console.log(data);
+    console.log(data)
+     
     // generate(data)
 }
 
+// async function init() {
+//     try {
+//         const data = await promptUser();
+//     }
+
+// }
+
 // function to write README file
-function writeToFile(data) {
-    fs.writeFile("README.md", data, err => {
-        if (err) {
-            throw err;
-        }
-        console.log("README.md file has been generated!")
-    });
-}
+// function writeToFile(data) {
+//     fs.writeFile("README.md", data, err => {
+//         if (err) {
+//             throw err;
+//         }
+//         console.log("README.md file has been generated!")
+//     });
+// }
 
 // function to initialize program
 // async function init() {
@@ -72,4 +80,5 @@ function writeToFile(data) {
 // }
 
 // function call to initialize program
-init();
+//init();
+promptUser();
