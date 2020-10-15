@@ -12,7 +12,8 @@ async function promptUser() {
         {
             type: "input",
             message: "What is your Github username?",
-            name: "username"
+            name: "username",
+            default: "Vincent Diaz"
         },
         {
             type: "input",
