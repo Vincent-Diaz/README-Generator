@@ -53,41 +53,21 @@ async function promptUser() {
                 choices: ["MIT license", "Apache license 2.0", "Mozilla Public License 2.0"],
                 name: "license"
             },
+            {
+                type: "input",
+                message: "Enter your email to be contacted.",
+                name: "email"
+            },
 
         ]);
         console.log(data)
         writeFileAsync("ExampleREADME.md", generate(data));
     } catch (err) {
         console.log(err);
+        console.log("README generated");
     }
-    // console.log(data)
-    // writeFileAsync("README2.md", generate(data));
-
-    // generate(data)
+    console.log("README generated");
+   
 }
 
-// async function init() {
-//     try {
-//         const data = await promptUser();
-//     }
-
-// }
-
-// function to write README file
-// function writeToFile(data) {
-//     fs.writeFile("README.md", data, err => {
-//         if (err) {
-//             throw err;
-//         }
-//         console.log("README.md file has been generated!")
-//     });
-// }
-
-// function to initialize program
-// async function init() {
-
-// }
-
-// function call to initialize program
-//init();
 promptUser();
