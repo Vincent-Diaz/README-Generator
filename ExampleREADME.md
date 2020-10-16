@@ -1,12 +1,12 @@
-# asdf
+# Fitness Tracker
 
    
   
-  ![Github badge](https://img.shields.io/badge/license-Apache license 2.0-blue.svg)
+![GitHub license](https://img.shields.io/badge/license-MITlicense-blue.svg)
   
 
   ## Description:
-  asdf
+  Track a users fitness and health.
 
   ## Table of Contents
    * [Installation](#installation)
@@ -17,21 +17,22 @@
    * [License](#license)
 
   ## Installation:
-  asdf
+  Install through web application.
 
   ## Usage:
-  adf
+  To track a users fitness and health.
 
 
 
-  ## Contributors
-  asdf
+  ## Contributors:
+  John Wick
 
   ## Test:
-  asf
+  npm run test
 
   ## Questions:
-  If you have any questions, contact [GitHub Link](https://github.com/Vincent-Diaz on Github.
+  If you have any questions, contact [Vincent-Diaz](https://github.com/Vincent-Diaz "Vincent-Diaz") on Github or by email diazkik@yahoo.com.
+  
 
   ## License:
-  Apache license 2.0
+  MIT license
