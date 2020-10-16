@@ -1,6 +1,16 @@
 // function to generate markdown for README
+function badge (license) {
+  license = license.replace(/\s/g, '');
+  return ` 
+  
+![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
+  `
+}
+
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${badge(data.license)}
 
   ## Description:
   ${data.description}
@@ -19,18 +29,22 @@ function generateMarkdown(data) {
   ## Usage:
   ${data.usage}
 
-  ## Contributors
+
+
+  ## Contributors:
   ${data.contributors}
 
   ## Test:
   ${data.test}
 
   ## Questions:
-  If you have any questions, contact [GitHub Link](https://github.com/${data.username} on Github.
+  If you have any questions, contact [Vincent-Diaz](https://github.com/${data.username} "Vincent-Diaz") on Github or by email ${data.email}.
+  
 
   ## License:
   ${data.license}
 `;
+
 }
 
 module.exports = generateMarkdown;
