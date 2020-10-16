@@ -61,7 +61,7 @@ async function promptUser() {
 
         ]);
         console.log(data)
-        writeFileAsync("ExampleREADME.md", generate(data));
+        writeFileAsync("README.md", generate(data));
     } catch (err) {
         console.log(err);
         console.log("README generated");
